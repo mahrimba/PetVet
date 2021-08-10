@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Veterinária Aumigos</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Veterinária Aumigos</h1>
+        <nav>
+            <a class="navmenu" asp-controller="Home" asp-action="Index">Início</a>
+            <a>|</a>
+            <a class="navmenu" asp-controller="Home" asp-action="Servicos">Serviços</a>
+            <a>|</a>
+            <a class="navmenu" asp-controller="Home" asp-action="Agendamento">Agendamento</a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <a>&copy; 2021 Veterinária Aumigos - Contato: (XX) XXXXX-XXXX</a>
+    </footer>
+</body>
+</html>
